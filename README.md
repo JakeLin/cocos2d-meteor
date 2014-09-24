@@ -65,7 +65,7 @@ Add init logic inside `if (Meteor.isClient)` in the js file
 ```
 Done
 
-Live Deom at [cocos2d.meteor.com](cocos2d.meteor.com)
+Live Demo at [cocos2d.meteor.com](http://cocos2d.meteor.com)
 
 ##Design Considerations
 * To support IE9 and IE10, I have to embed the cocos2d js within $(document).ready() method. Therefore, all code uses `cc` variable must run after page loaded. In Meteor, we usually place those logic in Template.myTemplate.rendered function (Page Loaded event). 
