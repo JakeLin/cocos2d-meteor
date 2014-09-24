@@ -4,10 +4,10 @@ Cocos2d-Meteor
 Bring Cocos2d-js and Meteor together.
 
 ##What is Cocos2d-Meteor
-Cocos2d-Meteor brings the number one open source game engine (Cocos2d) and the most powerful full stack JavaScript framework (Meteor) together to help us develop games easier and quicker.
+Cocos2d-Meteor brings the World's #1 Open Source Game Development Platform (Cocos2d) and the ultra-simple, database-everywhere, data-on-the-wire, pure-Javascript web framework (Meteor) together to help us develop games easier and quicker.
  
 ##Why use Cocos2d-Meteor
-By using Cocos2d-Meteor, we can just use JavaScript to develop the entire game, which comprises frontend (scenes, sprites, actions and physics engine) and backend (leaderboard, level and progress).
+By using Cocos2d-Meteor, we can just use one language (JavaScript) to develop the entire game, which comprises frontend (scenes, sprites, actions and physics engine) and backend (leaderboard, level and progress). We can develop the entire project in one codebase. And don't need to worry about sending JSON via Restful API or Websocket messages back and forth because Meteor has helped us wire anything up. 
 
 ##Installation
 `$ meteor add jakelin:cocos2d-meteor`
