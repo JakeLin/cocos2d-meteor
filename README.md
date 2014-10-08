@@ -70,3 +70,45 @@ Live Demo at [cocos2d.meteor.com](http://cocos2d.meteor.com)
 ##Design Considerations
 * To support IE9 and IE10, I have to embed the cocos2d js within $(document).ready() method. Therefore, all code uses `cc` variable must run after page loaded. In Meteor, we usually place those logic in Template.myTemplate.rendered function (Page Loaded event). 
 * Cocos2d-Meteor should support all browsers which both Cocos2d-js and Meteor can support. If you find any problem please create an issue.
+
+##Cocos2d-js v3.0 supported features
+|File	|Description|
+| ------------- |:-------------:|
+|core	|Engine core modules, includes Director, Node, Scene, Layer, Sprite, LabelTTF, EventManger, Scheduler and Texture2D. The default render is canvas
+|webgl	|Cocos2d WebGL support
+|log	|Log system and debug informations
+|actions|	Configurable actions for animating nodes with position, scale, etc
+|audio	|Audio system
+|menus	|Menu and MenuItem nodes for creating game menu
+|render-texture	|RenderTexture node for custom rendering
+|sprite-batch-node	|A type of sprite that can host sprites using the same texture and enable |texture batching to improve performance
+|labels	|Label nodes including LabelBMFont, LabelAtlas
+|motion-streak	|MotionStreak which can manage a ribbon based on its motion
+|shape-nodes	|DrawNode can be used to render lines, polygons, curves, etc
+|clipping-nodes	|ClippingNode can clip hosted nodes with shape or texture as stencil
+|effects	|Effects that can be applied to nodes, like page turn, shake, wave, etc
+|progress-timer	|ProgressTimer node which can transform a node into a progression bar
+|transitions	|Scene transition effects
+|particle	|ParticleSystem node and built in particle effects
+|text-input	|Nodes for simple text inputing
+|tilemap	|TMX file parser for creating tile map layers
+|parallax	|Parallax effect which can be applied to layers
+|gui	|Another GUI extension with a set of useful widgets
+|ccbreader	|CocosBuilder editor support
+|editbox	|Edit Box for more complex text inputing
+|ccui	|Cocos UI widgets with layout support
+|cocostudio	|CocoStudio editor support
+|ccpool	|Sprite recycling pool
+|pluginx	|Social network API plugins
+|box2d	|Built in box2d physics engine support
+|spine	|The spine support library
+
+##Non-supported features
+There are some conflicts between socketio and meteor since meteor has SockJS.
+chipmunk can be integrated if required.
+
+|File	|Description|
+| ------------- |:-------------:|
+|socketio	|ScoketIO library support
+|chipmunk	|Built in Chipmunk physics engine support
+
