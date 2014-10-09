@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Bring Cocos2d-js and Meteor together.",
-  version: "1.1.0",
+  version: "1.1.1",
   git: "https://github.com/JakeLin/cocos2d-meteor.git"
 });
 
