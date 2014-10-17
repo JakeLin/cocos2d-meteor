@@ -1,5 +1,5 @@
-$(document).ready(function(){
-  var cc = cc || {};
+var cc = cc || {};
+cc.init = function() {
   cc._tmp = cc._tmp || {};
   cc._tmp.WebGLColor = function () {
     cc.color = function (r, g, b, a, arrayBuffer, offset) {
@@ -74377,4 +74377,4 @@ $(document).ready(function(){
 
   window.cc = cc;
   window.Box2D = Box2D;
-});
+};
