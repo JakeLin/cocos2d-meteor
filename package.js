@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Bring Cocos2d-js and Meteor together.",
-  version: "1.2.0",
+  version: "1.2.12",
   git: "https://github.com/JakeLin/cocos2d-meteor.git"
 });
 
@@ -12,5 +12,6 @@ Package.onUse(function(api) {
   if (api.export) {
     api.export('cc');
     api.export('Box2D');
+    api.export('ccInit');
   }
 });

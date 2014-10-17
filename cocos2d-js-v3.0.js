@@ -1,5 +1,7 @@
-var cc = cc || {};
-cc.init = function() {
+$(document).ready(function(){
+  var ccInit = ccInit || {};
+  ccInit.init = function () {
+  var cc = cc || {};
   cc._tmp = cc._tmp || {};
   cc._tmp.WebGLColor = function () {
     cc.color = function (r, g, b, a, arrayBuffer, offset) {
@@ -3030,7 +3032,11 @@ cc.init = function() {
     _runMainLoop: function () {
       var self = this, callback, config = self.config, CONFIG_KEY = self.CONFIG_KEY,
           director = cc.director;
+      if(!director) {
+        return;
+      }
       director.setDisplayStats(config[CONFIG_KEY.showFPS]);
+
       callback = function () {
         if (!self._paused) {
           director.mainLoop();
@@ -74374,7 +74380,10 @@ cc.init = function() {
   sp.SkeletonAnimation.create = function (skeletonDataFile, atlasFile, scale) {
     return new sp.SkeletonAnimation(skeletonDataFile, atlasFile, scale);
   };
-
   window.cc = cc;
   window.Box2D = Box2D;
 };
+
+  ccInit.init();
+  window.ccInit = ccInit;
+});
