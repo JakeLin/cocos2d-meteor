@@ -1,7 +1,7 @@
 $(document).ready(function(){
   var ccInit = ccInit || {};
   ccInit.init = function () {
-  var cc = cc || {};
+  var cc = {};
   cc._tmp = cc._tmp || {};
   cc._tmp.WebGLColor = function () {
     cc.color = function (r, g, b, a, arrayBuffer, offset) {
