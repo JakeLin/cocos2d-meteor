@@ -1,4 +1,7 @@
 $(document).ready(function(){
+  var ccInit = ccInit || {};
+  ccInit.init = function () {
+var cc = {};
 var cc = cc || {};
 cc._tmp = cc._tmp || {};
 cc._LogInfos = {};
@@ -87899,6 +87902,10 @@ sp.SkeletonAnimation.create = function (skeletonDataFile, atlasFile, scale) {
     };
 })();
 
-window.cc = cc;
-window.Box2D = Box2D;
-)};
+  window.cc = cc;
+  window.Box2D = Box2D;
+};
+
+  ccInit.init();
+  window.ccInit = ccInit;
+});
